@@ -16,13 +16,7 @@ class Menu extends React.Component{
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav>
-              <LinkContainer to={{ pathname: '/submit' }}>
-              <NavItem eventKey={1} >Submit Poll</NavItem>
-              </LinkContainer>
-            </Nav>
-              
+          <Navbar.Collapse>    
           </Navbar.Collapse>
         </Navbar>
       );

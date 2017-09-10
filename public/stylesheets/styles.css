@@ -35,6 +35,7 @@ p {
 }
 
 
+
 .center {
   text-align: center;
 }
@@ -170,3 +171,144 @@ header .header-content {
     margin: 0 auto;
 
 }
+
+.glyphicon {
+  padding : 0 1rem;
+}
+
+
+.user-menu-col {
+  heigh : 100%;
+  display: table-cell;
+  /* IE10+ */
+background-image: -ms-linear-gradient(bottom, #808080 0%, #070D21 80%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(bottom, #808080 0%, #070D21 80%);
+
+/* Opera */
+background-image: -o-linear-gradient(bottom, #808080 0%, #070D21 80%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #808080), color-stop(80, #070D21));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom, #808080 0%, #070D21 80%);
+
+/* W3C Markup */
+background-image: linear-gradient(to top, #808080 0%, #070D21 80%);
+  /*background-color: gray;*/
+  padding : 4rem 0rem;
+}
+.avatar {
+  margin : 0 auto;
+  padding : 2rem 1rem 1rem 1rem ;
+  width : 15rem;
+}
+.user-name {
+color : #fff;
+font-size :1.5rem;
+text-align: center;
+padding : 1rem 1rem 3rem 1rem;
+}
+.saldo {
+  width: 100%;
+  padding : 0.4rem 1rem  0rem 1rem;
+  background-color: #eae3e3;
+}
+#saldo_amount{
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left:1rem;
+}
+
+#left-info-panel{
+  margin-top : 2rem;
+  color :#fff;
+
+  background-color: rgb(49, 187, 187);
+  padding:3rem;
+}
+
+.nav-pills>li>a {
+    color: #fff;
+    border-radius: 0px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+.nav-pills>li.active>a {
+  background-color: #d7dce0;
+}
+
+
+.circle,.circle:before,.circle:after,.circle b:before,.circle b:after{
+    content:"";
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.circle{
+    position:relative;
+    /*float:left;*/
+
+    overflow:hidden;
+    margin:0 auto;
+    transform:rotate(0deg);/* make overflow work for nested transform*/
+    background:#f9f9f9;
+}
+.circle:before,.circle:after,.circle b:before,.circle b:after{
+    position:absolute;
+    left:0;
+    top:0;
+}
+.circle:before{/*hide half of circle */
+    border-radius:50% 0 0 50%;
+    z-index:2;
+    left:-50%;
+    background:#f9f9f9;
+}
+.circle b:after {
+    background-image:linear-gradient(to right,blue 50%,transparent 50%,transparent 100%);
+    z-index:1;
+    animation:3s spin linear forwards;
+}
+.circle b:before {
+    background-image:linear-gradient(to left,blue 50%,transparent 50%,transparent 100%);
+    z-index:4;
+    animation:3s spin2 linear forwards 3s;
+    opacity:0;
+}
+
+.circle i {
+    display:block;
+    width:94px;
+    height:94px;
+    line-height:94px;
+    font-size:150%;
+    text-align:center;
+    margin:3px;
+    position:relative;
+    z-index:5;
+    background:#fff;
+    border-radius:50%;
+}
+.b2 b:after{animation-name:spinb}
+.b2 b:before{display:none}
+
+.b3 b:after{animation-name:spinc}
+.b3 b:before{display:none}
+
+.b4 b:after{animation-name:spind}
+.b4 b:before{animation-name:spind2}
+
+
+@keyframes spin{from {  transform:rotate(0)}to {transform:rotate(180deg)}}
+@keyframes spin2{from { transform:rotate(0);opacity:1}to {transform:rotate(90deg);opacity:1}}
+
+@keyframes spinb{from { transform:rotate(0)}to {transform:rotate(180deg)}}
+
+@keyframes spinc{from { transform:rotate(0)}to {transform:rotate(90deg)}}
+
+@keyframes spind{from { transform:rotate(0)}to {transform:rotate(180deg)}}
+@keyframes spind2{from {    transform:rotate(0);opacity:1}to {transform:rotate(57deg);opacity:1}}
